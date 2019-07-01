@@ -1,0 +1,21 @@
+16:43:30.933 found scenario at line: 11 - ^Fetch user by id$
+16:43:31.058 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:43:31.434 request:
+1 > GET http://localhost:8080/api/post/1
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.9 (Java/12.0.1)
+
+16:43:31.719 response time in milliseconds: 279.98
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 28 Jun 2019 11:13:31 GMT
+1 < Transfer-Encoding: chunked
+{"id":1,"title":"sunt aut facere repellat provident occaecati excepturi optio reprehenderit","body":"quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto","userId":1}
+
+16:42:31.507 assertion failed: path: $, actual: {id=1, title=sunt aut facere repellat provident occaecati excepturi optio reprehenderit, body=quia et suscipit
+suscipit recusandae consequuntur expedita et cum
+reprehenderit molestiae ut ut quas totam
+nostrum rerum est autem sunt rem eveniet architecto, userId=1}, expected: {id=1, name=#notnull, teamName=#notnull, salary=#notnull}, reason: all key-values did not match, expected has un-matched keys: [name, teamName, salary]

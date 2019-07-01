@@ -1,0 +1,18 @@
+16:50:59.754 found scenario at line: 5 - ^Fetch all user$
+16:50:59.939 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+16:51:00.272 request:
+1 > GET http://localhost:8080/api/user
+1 > Accept: application/json
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:8080
+1 > User-Agent: Apache-HttpClient/4.5.9 (Java/12.0.1)
+
+16:51:00.339 response time in milliseconds: 64.77
+1 < 200
+1 < Content-Type: application/json;charset=UTF-8
+1 < Date: Fri, 28 Jun 2019 11:21:00 GMT
+1 < Transfer-Encoding: chunked
+[{"id":1,"name":"John Wick","teamName":"Dev","salary":10000},{"id":2,"name":"Johnny Depp","teamName":"QA","salary":12000},{"id":3,"name":"test","teamName":"test","salary":12345}]
+
+1,"name":"John Wick","teamName":"Dev","salary":10000},{"id":2,"name":"Johnny Depp","teamName":"QA","salary":12000},{"id":3,"name":"test","teamName":"test","salary":12345}], expected: {id=#notnull, namme=#notnull, teamName=#notnull, salary=#notnull}, reason: actual value does not contain expected
